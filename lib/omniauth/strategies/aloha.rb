@@ -83,17 +83,5 @@ module OmniAuth
 
     end
 
-    class SalesforceSandbox < OmniAuth::Strategies::Aloha
-      default_options[:client_options][:site] = 'https://test.salesforce.com'
-    end
-
-    class DatabaseDotCom < OmniAuth::Strategies::Aloha
-      default_options[:client_options][:site] = 'https://login.database.com'
-    end
-
-    class SalesforcePreRelease < OmniAuth::Strategies::Aloha
-      default_options[:client_options][:site] = 'https://prerellogin.pre.salesforce.com/'
-    end
-
   end
 end
